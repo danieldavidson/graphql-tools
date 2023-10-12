@@ -7,7 +7,7 @@ RUN apt update && apt install -y curl git nmap python3 python3-pip wget
 WORKDIR /tools
 RUN git clone https://github.com/nikitastupin/clairvoyance.git && python3 -m pip install aiohttp rich
 RUN git clone -b v4.x https://github.com/doyensec/inql.git && cd /tools/inql && python3 setup.py install
-RUN git clone https://github.com/dolevf/graphw00f.git
+RUN git clone https://github.com/dolevf/graphw00f.git && python3 -m pip install requests
 RUN git clone https://github.com/assetnote/batchql.git
 RUN git clone https://github.com/dolevf/nmap-graphql-introspection-nse.git
 RUN git clone https://github.com/dolevf/graphql-cop.git
