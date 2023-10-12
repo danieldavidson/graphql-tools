@@ -11,7 +11,7 @@ RUN git clone https://github.com/nikitastupin/clairvoyance.git
 RUN git clone -b v4.x https://github.com/doyensec/inql.git && cd /tools/inql && python3 setup.py install
 RUN git clone https://github.com/dolevf/graphw00f.git
 RUN git clone https://github.com/assetnote/batchql.git
-RUN git clone https://github.com/dolevf/nmap-graphql-introspection-nse.git
+RUN git clone https://github.com/dolevf/nmap-graphql-introspection-nse.git && cd /tools/nmap-graphql-introspection-nse && cp graphql-introspection.nse /usr/share/nmap/scripts
 RUN git clone https://github.com/dolevf/graphql-cop.git
 RUN git clone https://github.com/nicholasaleks/CrackQL.git
 RUN git clone https://github.com/commixproject/commix.git
