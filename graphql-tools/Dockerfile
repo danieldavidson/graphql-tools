@@ -18,3 +18,6 @@ RUN git clone https://github.com/commixproject/commix.git
 RUN git clone https://github.com/RedSiege/EyeWitness.git
 RUN wget "https://gitlab.com/dee-see/graphql-path-enum/-/jobs/artifacts/v1.1.1/raw/target/release/graphql-path-enum?job=build-linux"
 
+RUN useradd --user-group --system --create-home --no-log-init --shell /bin/bash user
+USER user
+
