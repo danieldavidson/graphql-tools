@@ -16,7 +16,8 @@ RUN git clone https://github.com/dolevf/graphql-cop.git && cd /tools/graphql-cop
 RUN git clone https://github.com/nicholasaleks/CrackQL.git
 RUN git clone https://github.com/commixproject/commix.git
 RUN git clone https://github.com/RedSiege/EyeWitness.git
-RUN wget "https://gitlab.com/dee-see/graphql-path-enum/-/jobs/artifacts/v1.1.1/raw/target/release/graphql-path-enum?job=build-linux"
+RUN wget "https://gitlab.com/dee-see/graphql-path-enum/-/jobs/artifacts/v1.1.1/raw/target/release/graphql-path-enum?job=build-linux" -O graphql-path-enum
+RUN chmod +x /tools/graphql-path-enum
 
 RUN useradd --user-group --system --create-home --no-log-init --shell /bin/bash user
 USER user
