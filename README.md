@@ -16,9 +16,9 @@
 ## Use
 The `-it` options instruct Docker to create an interactive `bash` shell in the container.
 
-The Black Hat GraphQL lab tools have been installed in the `/tools` directory.
+The Black Hat GraphQL lab tools have been installed in the `/tools` directory of the container.
 
-Assuming that you've launched the [Damn Vulnerable GraphQL Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application) according to the installation instructions, the application will be accessible from the graphql-tools container using the container host's IP address (in the following example that's `192.168.1.27`).
+Assuming that you've launched the [Damn Vulnerable GraphQL Application](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application) according to the installation instructions, the vulnerable app will be accessible from the graphql-tools container using the container host's IP address (in the following example that's `192.168.1.27`).
 
 ```
 user@ba668db4e141:/tools$ cd graphw00f/
