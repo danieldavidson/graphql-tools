@@ -1,3 +1,0 @@
-Installing [DVGA](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application/) on an M1 Mac.
-
-Follow the [Docker installation instrunctions](https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application/tree/master#docker), but before you build the Docker image, copy [Dockerfile.arm64](./Dockerfile.arm64) into the root of the DVGA project, and then run `docker build -t dvga -f Dockerfile.arm64 .` to build the Docker image. Complete the rest of the steps as documented.
